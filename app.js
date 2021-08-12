@@ -8,7 +8,9 @@ app.set("view engine","ejs");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-mongoose.connect("mongodb+srv://Avinash:Avi@2302@cluster0.hbln3.mongodb.net/CalorieApp", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://Avinash:Avi@2302@cluster0.hbln3.mongodb.net/CalorieApp", {useNewUrlParser: true,useUnifiedTopology: true, useFindAndModify: false})
+
+});
 
 const userSchema = {
   name : String,
