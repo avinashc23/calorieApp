@@ -46,6 +46,11 @@ var togain4Kg=TDEE+((7000*4)/30);
 res.render("result",{BMRvalue:BMR,TDEEvalue:TDEE,calToLose2Kg:toLose2Kg,calToLose4Kg:toLose4Kg,calToGain2Kg:togain2Kg,calToGain4Kg:togain4Kg});
 });
 
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+
+app.listen(port, function() {
+  console.log("Server started succesfully");
 });
