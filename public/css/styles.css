@@ -18,11 +18,10 @@ h2{
 }
 label{
   font-size: 30px;
-  margin: 0 20px 0 20px;
+  margin: 0 10px 0 10px;
 }
 
 button{
-  position: absolute;
   text-align: center;
 }
 
