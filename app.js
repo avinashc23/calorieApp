@@ -46,9 +46,6 @@ var togain4Kg=TDEE+((7000*4)/30);
 res.render("result",{BMRvalue:BMR,TDEEvalue:TDEE,calToLose2Kg:toLose2Kg,calToLose4Kg:toLose4Kg,calToGain2Kg:togain2Kg,calToGain4Kg:togain4Kg});
 });
 
-app.get("/favicon.ico", function(req, res){
-    res.sendStatus(204);
-});
 
 let port = process.env.PORT;
 if (port == null || port == "") {
