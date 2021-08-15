@@ -1,15 +1,15 @@
 <%- include("partials/header"); -%>
     <h1>Calculate TDEE</h1>
     <form class="" action="/calculateTDEE" method="post">
-      <div class="input">
-        <label>Name</label>
-        <input  type="text"  name="name" placeholder="Enter your name" autocomplete="off" required>
-        <label>Weight</label>
-        <input  type="number"  name="weight" placeholder="Enter your body weight in Kg" autocomplete="off" required>
-        <label>Body fat</label>
-        <input  type="number" name="bodyFat" placeholder="Enter your body fat in %" autocomplete="off" required>
-        <label> Activity level</label>
-        <select name="activityLevel" id="activity level" placeholder="Choose your activity level" required>
+      <div class="form-outline input">
+        <label for="form1">Name</label>
+        <input  type="text" class="form-control " id="form1" name="name" placeholder="Enter your name" autocomplete="off" required>
+        <label for="form2">Weight</label>
+        <input  type="number" class="form-control" id="form2" name="weight" placeholder="Enter your body weight in Kg" autocomplete="off" required>
+        <label for="form3">Body fat</label>
+        <input  type="number" class="form-control" id="form3" name="bodyFat" placeholder="Enter your body fat in %" autocomplete="off" required>
+        <label for="activity level"> Activity level</label>
+        <select name="activityLevel" class="form-control" id="activity level" placeholder="Choose your activity level" required>
         <option value="">None</option>
         <option value="1.2">sedetary-1.2</option>
         <option value=1.375>lightlyActive-1.375</option>
@@ -19,7 +19,7 @@
       </select>
 
       </div>
-  
+
   <div class="homebutton">
         <button  type="submit" class="btn btn-outline-dark btn-lg" name="button">calculateTDEE</button>
     </div>
