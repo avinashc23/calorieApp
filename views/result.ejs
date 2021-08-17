@@ -2,10 +2,13 @@
     <div class="result">
       <h2>TDEE VALUE IS <%=TDEEvalue%> </h2>
       <h2>BMR VALUE IS <%=BMRvalue%> </h2>
-      <p>Colories to take in,to lose 2Kg in a month is <%=calToLose2Kg%> </p>
-      <p>Colories to take in,to lose 4Kg in a month is <%=calToLose4Kg%> </p>
-      <p>Colories to take in,to gain 2Kg in a month is <%=calToGain2Kg%> </p>
-      <p>Colories to take in,to gain 4Kg in a month is <%=calToGain4Kg%> </p>
+      <div class="calorie">
+        <p class="topptag">Colories to take in per day,to lose 2Kg in a month :<b> <%=calToLose2Kg%> </b> </p>
+        <p>Colories to take in per day,to lose 4Kg in a month :<b> <%=calToLose4Kg%> </b> </p>
+        <p>Colories to take in per day,to gain 2Kg in a month :<b> <%=calToGain2Kg%> </b> </p>
+        <p class="bottomptag">Colories to take in per day,to gain 4Kg in a month :<b> <%=calToGain4Kg%> </b> </p>
+      </div>
+
 </div>
 
 <%- include("partials/footer"); -%>

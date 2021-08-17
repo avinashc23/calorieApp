@@ -43,7 +43,7 @@ var toLose4Kg=TDEE-((7000*4)/30);
 var togain2Kg= TDEE+((7000*2)/30);
 var togain4Kg=TDEE+((7000*4)/30);
 
-res.render("result",{BMRvalue:BMR,TDEEvalue:TDEE,calToLose2Kg:toLose2Kg,calToLose4Kg:toLose4Kg,calToGain2Kg:togain2Kg,calToGain4Kg:togain4Kg});
+res.render("result",{BMRvalue:BMR.toFixed(1),TDEEvalue:TDEE.toFixed(1),calToLose2Kg:toLose2Kg.toFixed(1),calToLose4Kg:toLose4Kg.toFixed(1),calToGain2Kg:togain2Kg.toFixed(1),calToGain4Kg:togain4Kg.toFixed(1)});
 });
 
 app.get("/favicon.ico", function(req, res){

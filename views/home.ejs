@@ -1,27 +1,47 @@
 <%- include("partials/header"); -%>
-    <h1>Calculate TDEE</h1>
-    <form class="" action="/calculateTDEE" method="post">
-      <div class="form-outline input">
-        <label for="form1">Name</label>
-        <input  type="text" class="form-control " id="form1" name="name" placeholder="Enter your name" autocomplete="off" required>
-        <label for="form2">Weight</label>
-        <input  type="number" class="form-control" id="form2" name="weight" placeholder="Enter your body weight in Kg" autocomplete="off" required>
-        <label for="form3">Body fat</label>
-        <input  type="number" class="form-control" id="form3" name="bodyFat" placeholder="Enter your body fat in %" autocomplete="off" required>
-        <label for="activity level"> Activity level</label>
-        <select name="activityLevel" class="form-control" id="activity level" placeholder="Choose your activity level" required>
-        <option value="">None</option>
-        <option value="1.2">sedetary-1.2</option>
-        <option value=1.375>lightlyActive-1.375</option>
-        <option value=1.55>moderatelyActive-1.55</option>
-        <option value=1.725>veryActive-1.725</option>
-        <option value=1.9>extraActive-1.9</option>
-      </select>
+    <h1>Calorie App</h1>
+    <form  action="/calculateTDEE" method="post">
+      <div class=" col-lg-offset-3">
 
+        <div class="form-group row">
+          <label for="form1" class="col-sm-2 text-secondary col-form-label">Name</label>
+          <div class="col-sm-5 ">
+            <input  type="text" class="form-control " id="form1" name="name" placeholder="Enter your name" autocomplete="off" required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="form2" class="col-sm-2 col-form-label">Weight</label>
+          <div class="col-sm-5">
+            <input  type="number" class="form-control" id="form2" name="weight" placeholder="Enter your body weight in Kg" autocomplete="off" required>
+          </div>
+        </div>
+      <div class="form-group row">
+        <label for="form3" class="col-sm-2 col-form-label">Body fat</label>
+        <div class="col-sm-5">
+          <input  type="number" class="form-control" id="form3" name="bodyFat" placeholder="Enter your body fat in %" autocomplete="off" required>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="activity level" class="col-sm-2 col-form-label font-weight-light"> Activity level</label>
+        <div class="col-sm-5">
+
+          <select name="activityLevel" class="form-control " id="activity level" placeholder="Choose your activity level" required>
+          <option value="">None</option>
+          <option value="1.2">sedetary-1.2</option>
+          <option value=1.375>lightlyActive-1.375</option>
+          <option value=1.55>moderatelyActive-1.55</option>
+          <option value=1.725>veryActive-1.725</option>
+          <option value=1.9>extraActive-1.9</option>
+        </select>
+        </div>
       </div>
 
+
+
+        </div>
+
   <div class="homebutton">
-        <button  type="submit" class="btn btn-outline-dark btn-lg" name="button">calculateTDEE</button>
+        <button  type="submit" class="btn btn-outline-dark" name="button">calculateTDEE</button>
     </div>
 
     </form>
