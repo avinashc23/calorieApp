@@ -1,5 +1,7 @@
 <%- include("partials/header"); -%>
     <h1>Calorie App</h1>
+    <div class="form-signin">
+
     <form  action="/calculateTDEE" method="post">
       <div class=" col-lg-offset-3">
         <div class="form-group row">
@@ -37,9 +39,11 @@
 </div>
 
   <div class="homebutton">
-        <button  type="submit" class="btn btn-outline-dark" name="button">calculateTDEE</button>
+        <button  class="w-100 btn btn-lg btn-primary dark"  type="submit"  name="button">calculateTDEE</button>
     </div>
 
     </form>
+
+  </div>
 
 <%- include("partials/footer"); -%>

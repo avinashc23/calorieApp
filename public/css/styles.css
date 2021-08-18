@@ -1,6 +1,7 @@
 body{
   background-color: #7FC8A9;
-
+background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 h1{
@@ -21,9 +22,6 @@ label{
   font-weight: bolder;
 }
 
-button{
-  text-align: center;
-}
 
 input{
 
@@ -42,6 +40,13 @@ p{
   font-size: 30px;
 }
 
+
+.form-signin{
+  width: 100%;
+padding: 75px;
+margin: auto;
+}
+
 .footer {
 	position: absolute;
 	text-align: center;
@@ -56,7 +61,18 @@ p{
   text-align:center;
   margin-top: 40px;
   margin-right: 30px;
+
 }
+.dark{
+    background-color:  #595260;
+    transition-duration: 0.4s;
+
+}
+.dark:hover{
+  color:black;
+  background-color: #EEEEEE;
+}
+
 
 .input{
   text-align: center;
@@ -71,9 +87,9 @@ p{
   background-color: #444941;
 
   margin: 50px 225px 50px 225px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
  box-shadow: 0 0 20px #5F7A61;
  border-radius: 15px;
+padding: 50px;
 
 }
